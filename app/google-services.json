@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "126654560082",
+    "firebase_url": "https://aplikasieceran.firebaseio.com",
+    "project_id": "aplikasieceran",
+    "storage_bucket": "aplikasieceran.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126654560082:android:5bb684a4b3ea89d1",
+        "android_client_info": {
+          "package_name": "com.bootcamp.eceran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126654560082-ik6be9r8cdoa2ca1069oe68i3ojmgm1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bootcamp.eceran",
+            "certificate_hash": "7df4b04aced522b82a4dcc20373cebe2400232f8"
+          }
+        },
+        {
+          "client_id": "126654560082-l99kiqnnnmhsd561nel8r5pdr2nhvet5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG3ZCym79BLUsAjKmPc1k75nF48D-RYfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126654560082-l99kiqnnnmhsd561nel8r5pdr2nhvet5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10pt">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="81pt">
+
+        <ImageView
+            android:id="@+id/idImage"
+            android:layout_width="match_parent"
+            android:layout_height="80pt"
+            android:src="@color/design_default_color_primary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/orange"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10pt"
+            android:padding="3pt">
+            <TextView
+                android:id="@+id/idLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasi"
+                android:textStyle="bold"
+                android:textSize="8pt"/>
+            <TextView
+                android:id="@+id/idAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textSize="8pt"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
