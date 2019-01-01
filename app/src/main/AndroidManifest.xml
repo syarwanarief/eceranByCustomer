@@ -32,6 +32,12 @@
             android:name=".MenuUtama.MenuAwal"
             android:label="@string/title_activity_menu_awal"
             android:theme="@style/AppTheme" />
+        <activity android:name=".Paket_User.DetailUser" />
+        <activity android:name=".Menu.DetailTempatActivity" />
+        <activity android:name=".MenuAdmin.PilihanMenu" />
+        <activity android:name=".MenuAdmin.Tambah" />
+        <activity android:name=".MenuAdmin.EditHapus" />
+        <activity android:name=".MenuAdmin.MenuEdit"></activity>
     </application>
 
 </manifest>

@@ -20,6 +20,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.bootcamp.eceran.FirebaseModel.ModelLokasi;
+import com.bootcamp.eceran.MenuAdmin.PilihanMenu;
 import com.bootcamp.eceran.PaketFragment.FragmentListTempat;
 import com.bootcamp.eceran.PaketFragment.Lainnya;
 import com.bootcamp.eceran.PaketFragment.MenuUtama;
@@ -80,6 +81,17 @@ public class MenuAwal extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_menu_awal, menu);
+        Menu optionmenu;
+        optionmenu = menu;
+        MenuItem item = optionmenu.findItem(R.id.admin);
+        item.setVisible(false);
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        String admin = sharedpreferences.getString(Emaill,"");
+        if (admin.trim().equals("admin@gmail.com")){
+                item.setVisible(true);
+        }else{
+            item.setVisible(false);
+        }
         return true;
     }
 
@@ -101,6 +113,9 @@ public class MenuAwal extends AppCompatActivity {
             startActivity(intent4);
             finish();
             return true;
+        }else if (id == R.id.admin){
+            Intent intent = new Intent(MenuAwal.this,PilihanMenu.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -153,14 +168,18 @@ public class MenuAwal extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            switch (position){
-                case 0:{
+            switch (position) {
+                case 0: {
                     MenuUtama menuAwal = new MenuUtama();
                     return menuAwal;
-                }case 1:{
+                }
+                case 1: {
+
                     final FragmentListTempat listTempat = new FragmentListTempat();
                     return listTempat;
-                }case 2:{
+
+                }
+                case 2: {
                     Lainnya lainnya = new Lainnya();
                     return lainnya;
                 }

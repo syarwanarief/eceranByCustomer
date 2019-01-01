@@ -24,12 +24,11 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/KlikLogin"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:src="@drawable/ic_person_black_24dp"
-                            android:onClick="kliklogin"
-                            tools:ignore="OnClick" />
+                            android:src="@drawable/ic_person_black_24dp" />
 
 
 
@@ -51,12 +50,11 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/musik"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:src="@drawable/ic_queue_music_black_24dp"
-                            android:onClick="klikmusik"
-                            tools:ignore="OnClick" />
+                            android:src="@drawable/ic_queue_music_black_24dp" />
 
 
 

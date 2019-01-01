@@ -19,13 +19,5 @@ public class LainnyaActivity extends AppCompatActivity {
         setContentView(R.layout.lainnya);
     }
 
-    public void kliklogin(View view) {
-        Intent intent = new Intent(getApplicationContext(),Login.class);
-        startActivity(intent);
-    }
 
-    public void klikmusik(View view) {
-        Intent intent = new Intent(getApplicationContext(),MusicActivity.class);
-        startActivity(intent);
-    }
 }

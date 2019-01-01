@@ -40,8 +40,6 @@ public class RecyclerAdapterMenu extends RecyclerView.Adapter<RecyclerAdapterMen
         holder.Lokasi.setText(mylist.getLokasi());
         holder.Alamat.setText(mylist.getAlamat());
         Picasso.with(context).load(mylist.getImage())
-                .resize(200,100)
-                .onlyScaleDown()
                 .fit()
                 .centerCrop()
                 .into(holder.imageView);
